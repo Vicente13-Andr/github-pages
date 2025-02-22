@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aconselhamento Intuitivo</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        h1 { color: #333; }
+        .cta-button { background-color: #ff9800; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        .cta-button:hover { background-color: #e68900; }
+        .section { margin-top: 30px; }
+        .messages { text-align: left; background: #eee; padding: 10px; border-radius: 5px; }
+        .footer { margin-top: 30px; font-size: 14px; color: gray; }
+        .input-container { margin-top: 20px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background-color: #ff9800; color: white; padding: 10px; border: none; border-radius: 5px; margin-top: 10px; cursor: pointer; }
+        button:hover { background-color: #e68900; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aconselhamento Intuitivo Pessoal e Profissional</h1>
+        <p>Uma comunidade para compartilhar dúvidas, incertezas e histórias e receber aconselhamento intuitivo.</p>
+        <a href="#comunidade" class="cta-button">Junte-se à Comunidade</a>
+
+        <div class="section" id="comunidade">
+            <h2>Como Funciona?</h2>
+            <p>Entre no nosso grupo exclusivo no WhatsApp ou LinkedIn e compartilhe suas dúvidas e histórias.</p>
+            <a href="#" class="cta-button">Entrar no WhatsApp</a>
+            <a href="#" class="cta-button">Entrar no LinkedIn</a>
+        </div>
+
+        <div class="section">
+            <h2>Mensagens da Comunidade</h2>
+            <div class="messages" id="messageContainer">
+                <p><strong>Ana:</strong> Estou indecisa entre aceitar uma nova proposta de emprego. O que devo considerar?</p>
+                <p><strong>João:</strong> Como posso melhorar minha comunicação no trabalho?</p>
+                <p><strong>Maria:</strong> Estou sentindo que preciso mudar de carreira, mas tenho medo.</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Seu nome">
+                <textarea id="message" placeholder="Escreva sua dúvida ou história..."></textarea>
+                <button onclick="addMessage()">Enviar Mensagem</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Aconselhamento Intuitivo. Todos os direitos reservados.
+    </div>
+
+    <script>
+        function addMessage() {
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+            if (name && message) {
+                var messageContainer = document.getElementById('messageContainer');
+                var newMessage = document.createElement('p');
+                newMessage.innerHTML = '<strong>' + name + ':</strong> ' + message;
+                messageContainer.appendChild(newMessage);
+                document.getElementById('name').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aconselhamento Intuitivo</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        h1 { color: #333; }
+        .cta-button { background-color: #ff9800; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        .cta-button:hover { background-color: #e68900; }
+        .section { margin-top: 30px; }
+        .messages { text-align: left; background: #eee; padding: 10px; border-radius: 5px; }
+        .footer { margin-top: 30px; font-size: 14px; color: gray; }
+        .input-container { margin-top: 20px; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background-color: #ff9800; color: white; padding: 10px; border: none; border-radius: 5px; margin-top: 10px; cursor: pointer; }
+        button:hover { background-color: #e68900; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aconselhamento Intuitivo Pessoal e Profissional</h1>
+        <p>Uma comunidade para compartilhar dúvidas, incertezas e histórias e receber aconselhamento intuitivo.</p>
+        <a href="#comunidade" class="cta-button">Junte-se à Comunidade</a>
+
+        <div class="section" id="comunidade">
+            <h2>Como Funciona?</h2>
+            <p>Entre no nosso grupo exclusivo no WhatsApp ou LinkedIn e compartilhe suas dúvidas e histórias.</p>
+            <a href="#" class="cta-button">Entrar no WhatsApp</a>
+            <a href="#" class="cta-button">Entrar no LinkedIn</a>
+        </div>
+
+        <div class="section">
+            <h2>Mensagens da Comunidade</h2>
+            <div class="messages" id="messageContainer">
+                <p><strong>Ana:</strong> Estou indecisa entre aceitar uma nova proposta de emprego. O que devo considerar?</p>
+                <p><strong>João:</strong> Como posso melhorar minha comunicação no trabalho?</p>
+                <p><strong>Maria:</strong> Estou sentindo que preciso mudar de carreira, mas tenho medo.</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Seu nome">
+                <textarea id="message" placeholder="Escreva sua dúvida ou história..."></textarea>
+                <button onclick="addMessage()">Enviar Mensagem</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Aconselhamento Intuitivo. Todos os direitos reservados.
+    </div>
+
+    <script>
+        function addMessage() {
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+            if (name && message) {
+                var messageContainer = document.getElementById('messageContainer');
+                var newMessage = document.createElement('p');
+                newMessage.innerHTML = '<strong>' + name + ':</strong> ' + message;
+                messageContainer.appendChild(newMessage);
+                document.getElementById('name').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        }
+    </script>
+</body>
+</html>
